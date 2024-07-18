@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+}
+
+.box {
+  height: 220px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: context-menu;
+  /* background-color: var(--ACCENT-COLOR); */
+  background-color: white;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px 0.5px grey;
+}
+.box .number {
+  font-size: 2.5rem;
+  font-family: var(--FF-HEADING);
+  letter-spacing: 1.5px;
+}
+
+.box .text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

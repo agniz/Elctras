@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 2px solid #8e8e8e;
+}
+.singleFeature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.singleFeature .fa-truck {
+  font-size: 35px;
+  color: #8e8e8e;
+}
+.singleFeature img {
+  width: 50px;
+}
+.featureTitle {
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+.featureText {
+  margin-top: 0.5rem;
+  color: #8e8e8e;
+  font-weight: bolder;
+}
+
+.info {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerLogo {
+  display: flex;
+  align-items: center;
+  font-size: var(--FS-HEADING-BG);
+  font-family: var(--FF-HEADING);
+  font-weight: 400;
+  font-style: normal;
+  gap: 0.5rem;
+}
+.footerLogo img {
+  filter: invert(1);
+}
+.comInfo {
+  display: flex;
+  flex-direction: column;
+}
+.comInfo span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.contactDetails {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.copyright {
+  font-weight: bold;
+  font-family: 1.1rem;
+}
+.paymentPatners {
+  display: flex;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #8e8e8e;
+}
+.linkRows {
+  display: flex;
+}
+.row ul {
+  list-style-type: none;
+  padding-right: 14.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row:last-child ul {
+  padding-right: 5rem;
+  border-right: 2px solid #8e8e8e;
+}
+.row h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #8e8e8e;
+  margin: 2rem 0 0.5rem 0;
+}
+.row li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.row li a::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.row li a:hover::after {
+  width: 100%;
+}
+.linkColumn {
+  flex-direction: column;
+  gap: 2rem;
+}
+.linkColumn span {
+  border-bottom: 1px solid white;
+}
+.socialIcons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.socialIcons i:hover {
+  scale: 1.5;
+}

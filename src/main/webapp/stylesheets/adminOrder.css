@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.orderTop {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.orderTop a,
+.orderTop p {
+  font-weight: bold;
+  font-size: var(--FS-HEADING-SM);
+  color: black;
+  text-decoration: none;
+}
+
+.mainTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+
+.content-table thead tr {
+  background-color: var(--ACCENT-COLOR);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #ffc42344;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+select {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  outline: none;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+
+.selectOrderStatus option[value="0"],
+.selectOrderStatus option[value="1"],
+.selectOrderStatus option[value="2"] {
+
+    padding: 5px;
+    background-color:black;
+      color: white; 
+     
+}

@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.category {
+  position: relative;
+}
+.totalCategory {
+  font-weight: bold;
+  font-size: var(--FS-HEADING-SM);
+}
+.categoryTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+
+.content-table thead tr {
+  background-color: var(--ACCENT-COLOR);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #ffc42344;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+.categoryTop {
+  display: flex;
+  justify-content: space-between;
+}
+.categoryTop a {
+  color: black;
+  text-decoration: none;
+  font-size: var(--FS-HEADING-SM);
+}
+
+.form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.333);
+
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.addCategoryForm {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30vh;
+  left: 55%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 3rem;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.addCategoryForm h1 {
+  font-size: var(--FS-HEADING-MD);
+  font-weight: bold;
+}
+.addCategoryForm input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding-inline: 1rem;
+}
+.addCategoryForm label {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  margin-inline: 1rem;
+}
+.catImage {
+  background-color: black;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submitCat {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.resetCat {
+  border: navajowhite;
+  outline: none;
+  background-color: red;
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}

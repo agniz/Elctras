@@ -1,0 +1,216 @@
+.singleProductContainer {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  position:relative;
+}
+.sImage {
+  background-color: #e7e2e2;
+  padding: 3rem;
+  border-radius: 85% 15% 81% 19% / 11% 85% 15% 89%;
+}
+.singleProductContainer img {
+  width: 500px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.singleProductDetails {
+  width: max-content;
+}
+.productTitle {
+  font-family: var(--FF-HEADING);
+  font-size: calc(var(--FS-HEADING-BG) + 2rem);
+  width: 100%;
+}
+
+.singleProductCategory {
+  font-size: var(--FS-TEXT-MD);
+  color: rgb(86, 85, 85);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.singleProductPrice {
+  font-size: var(--FS-HEADING-SM);
+  font-weight: bold;
+  
+}
+
+.singleProductDescription {
+  display: flex;
+  gap:4rem;
+  font-size: var(--FS-TEXT-BG);
+}
+.singleProductDescription h3 {
+  font-weight: bold;
+  font-size: var(--FS-TEXT-MD);
+  color: rgb(86, 85, 85);
+  letter-spacing: 1.2px;
+  
+}
+.singleProductDescription p{
+	font-weight:bold;
+}
+
+.cartForm {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap:2rem;
+}
+.cartForm label {
+  font-weight: bold;
+}
+.cartForm input {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  width: 10rem;
+}
+.cartForm button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+.cartForm button:hover {
+  scale: 1.1;
+}
+.back{
+	font-weight:bold;
+	background-color:black;
+	color:white;
+	display:flex;
+	align-items:center;
+	gap:.5rem;
+	padding:.5rem 1rem;
+	border-radius:12px;
+	position:absolute;
+	top:0;
+	right:50px;
+}
+
+.trendingItems h1 {
+  font-size: var(--FS-TOPIC);
+  font-family: var(--FF-HEADING);
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+}
+.trendingItemsContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.trendingItemsContainer::-webkit-scrollbar {
+  transform: translateY(2rem);
+  height: 2px;
+}
+.trendingItemsContainer:hover.trendingItemsContainer::-webkit-scrollbar {
+  height: 10px;
+}
+.trendingItemsContainer::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 100vw;
+}
+.trendingItemsContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 100vw;
+}
+.singleProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 2rem;
+  min-width: 320px;
+  height: fit-content;
+  /* max-height: 400px; */
+  transition: all 350ms ease-in-out;
+}
+.singleProduct .image {
+  position: relative;
+  padding: 0.5rem;
+  border-bottom: 2px solid grey;
+}
+.singleProduct .image img{
+	  width: 300px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.quickView {
+  display: none;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  justify-content: center;
+  transition: all 350ms ease-in-out;
+  align-items: center;
+  gap: 1rem;
+  /* transition: all 5s ease; */
+  font-weight: bold;
+}
+.singleProduct:hover {
+  scale: 0.95;
+}
+.singleProduct:hover .quickView {
+  display: flex;
+}
+.quickView:hover {
+  background-color: var(--ACCENT-COLOR);
+  color: black;
+}
+
+.singleProduct .details {
+  align-self: flex-start;
+  margin-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.details .detailCategory {
+  font-size: var(--FS-TEXT-MD);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: rgb(66, 66, 66);
+}
+
+.details .detailProductName {
+  font-size: var(--FS-HEADING-SM);
+  font-weight: bold;
+  letter-spacing: 1.1px;
+   white-space: nowrap;
+}
+.details .detailProductPrice {
+  font-weight: bold;
+  font-size: var(--FS-TEXT-MD);
+}
+
+
+
+.designHeading {
+  background-color: var(--ACCENT-COLOR);
+  padding-inline: 1rem;
+  border-radius: 20px;
+}

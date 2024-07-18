@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.productTop {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.productTop a,
+.productTop p {
+  font-weight: bold;
+  font-size: var(--FS-HEADING-SM);
+  color: black;
+  text-decoration: none;
+}
+.addProductLink {
+  cursor: pointer;
+}
+.addProductLink i {
+  padding-right: 0.3rem;
+}
+.search {
+  width: 30vw;
+}
+.searchForm {
+  background-color: white;
+  border: 3px solid black;
+  display: flex;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.searchForm input {
+  width: 95%;
+  border: none;
+  outline: none;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.searchForm input::placeholder {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.searchBtn {
+  border: none;
+  padding-inline: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.mainTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+
+.content-table thead tr {
+  background-color: var(--ACCENT-COLOR);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #ffc42344;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.actionBtn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding-block: 0.5rem;
+  border-radius: 12px;
+  position: relative;
+}
+.edit {
+  color: rgb(74, 199, 74);
+}
+.delete {
+  color: red;
+}
+.actionBtn:hover .hover {
+  display: block;
+}
+.hover {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.edt {
+  top: -30px;
+}
+
+.dlt {
+  bottom: -30px;
+}

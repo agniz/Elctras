@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+  background-color: var(--ACCENT-COLOR);
+  position: relative;
+  height: 100vh;
+  font-family: var(--FF-TEXT);
+}
+main {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  height: 100%;
+}
+.mainContent {
+  background-color: var(--OFF-WHITE);
+  margin: 20px 20px 20px 0;
+  border: 19px solid var(--ACCENT-COLOR);
+  border-radius: 50px;
+  padding-inline: 4rem;
+}
+
+.sideBar {
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-inline: auto;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.logo img {
+  width: 40px;
+}
+.logo h1 {
+  font-size: var(--FS-HEADING-BG);
+  font-family: var(--FF-HEADING);
+  letter-spacing: 1.5px;
+}
+
+.sidebarLinksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.sideBarLinks li {
+  list-style: none;
+  padding-inline: 3rem;
+  padding-block: 1.5rem;
+  margin-block: 1rem;
+  margin-right: -50px;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.sideBarLinks li:hover {
+  background-color: var(--OFF-WHITE);
+}
+
+.sideBarLinks li  {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sideBarLinks li  i {
+  font-size: 1.2rem;
+}
+
+.sideBarLinks li.active {
+  background-color: var(--OFF-WHITE);
+}
+
+
+
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.profileButton {
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.topPart h1 {
+  font-size: var(--FS-HEADING-MD);
+  font-weight: bold;
+}
+.relative {
+  position: relative;
+}
+.profileList {
+  position: absolute;
+  top: 90%;
+  right: 40%;
+  transform: translateX(40%);
+  background-color: black;
+  width: 200px;
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 20px;
+   z-index: 2;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.profileList li {
+  padding: 1rem;
+  cursor: pointer;
+}
+.profileList li i{
+	padding-right:0.5rem;
+}
+.profileList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profileList li:hover {
+  background-color: white;
+}
+.profileList li:hover a {
+  color: black;
+}
+.hide{
+	display:none;
+}

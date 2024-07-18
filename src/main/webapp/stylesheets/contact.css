@@ -1,0 +1,108 @@
+@charset "UTF-8";.businessDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+  margin-inline: 1rem;
+}
+.businessDetail h1 {
+  font-size: calc(var(--FS-HEADING-BG) + 1rem);
+  letter-spacing: 1px;
+  font-family: var(--FF-HEADING);
+  background-color: var(--ACCENT-COLOR);
+  width: fit-content;
+  padding-inline: 1.5rem;
+  border-radius: 12px;
+}
+.businessDetail h2 {
+  font-size: var(--FS-HEADING-MD);
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.businessDetail h3 {
+  font-size: var(--FS-HEADING-SM);
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.details ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.details ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.map {
+  width: 45%;
+  height: 400px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+.formElementContact {
+  width: 750px;
+  background-color: #dddddd;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.formElementContact input {
+  width: 75%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.formElementContact label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.formElementContact h2 {
+  font-family: var(--FF-HEADING);
+  font-size: calc(var(--FS-HEADING-BG) + 1rem);
+}
+
+.formDetail {
+  display: flex;
+  flex-direction: column;
+}
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+textarea {
+  width: 75%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  outline: none;
+  resize: none;
+}
+.send {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  float: right;
+  cursor: pointer;
+}
+.send:hover {
+  scale: 1.1;
+}

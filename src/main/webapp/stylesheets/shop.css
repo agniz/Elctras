@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+.shopTop {
+  background-color: #f1f5f8;
+  padding-top: 6rem;
+  padding-inline: 5rem;
+}
+.shopHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.shopHero h1 {
+  font-size: calc(1rem + var(--FS-HEADING-BG));
+  font-family: var(--FF-HEADING);
+  letter-spacing: 1.2px;
+}
+.shopHero p {
+  font-size: var(--FS-TEXT-BG);
+  line-height: 1.8;
+  font-weight: bold;
+}
+.shopBtn {
+  display: block;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: var(--FS-TEXT-BG);
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  transition: all ease 250ms;
+  font-weight: bold;
+}
+.shopBtn:hover {
+  scale: 1.1;
+}
+.shopHeroImage {
+  width: 50%;
+}
+
+.filters {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+}
+.notFoundMessage{
+	font-size:2rem;
+	font-weight:bold;
+}
+
+select {
+
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  outline: hidden;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 5rem;
+  margin-top: 2rem;
+}
+.sProductImage {
+  background-color: rgb(235, 234, 234);
+  padding: 2rem;
+  border-radius: 12px;
+
+}
+.sProductImage img {
+  width: 250px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  transition: all 350ms ease-in-out;
+}
+.shopSingleProduct {
+  padding-bottom: 1rem;
+}
+.shopSingleProduct:hover .sProductImage img {
+  scale: 1.1;
+}
+
+.sProductDetail {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+
+.sProductName {
+  font-size: var(--FS-HEADING-SM);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.sProductCategoryName {
+  font-size: var(--FS-TEXT-SM);
+  color: grey;
+}
+.sProductPrice {
+  font-size: var(--FS-TEXT-BG);
+  color: black;
+  font-weight: bold;
+}
+.sCart {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  align-self: center;
+}
